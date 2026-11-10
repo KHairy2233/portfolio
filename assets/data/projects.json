@@ -1,0 +1,943 @@
+[
+  {
+    "id": "cottonil-retail",
+    "title": {
+      "en": "Cottonil Retail Analytics Dashboard",
+      "ar": "لوحة تحليلات مبيعات التجزئة لكوتونيل"
+    },
+    "subtitle": {
+      "en": "End-to-end retail intelligence featuring sales, inventory, supplier metrics, Market Basket and What-If analysis.",
+      "ar": "منظومة ذكاء أعمال متكاملة لتجزئة الملابس تشمل المبيعات والمخزون وتحليل سلة المشتريات وسيناريوهات ماذا-لو."
+    },
+    "category": "bi",
+    "categoryLabel": {
+      "en": "Power BI & BI",
+      "ar": "باور بي آي وذكاء الأعمال"
+    },
+    "featured": true,
+    "tools": ["Power BI", "Python", "Microsoft Excel", "Power Query", "DAX"],
+    "githubUrl": "https://github.com/KHairy2233/Cottonil-Retail-Analytics",
+    "thumbnail": "assets/images/projects/cottonil_overview.png",
+    "images": [
+      {
+        "url": "assets/images/projects/cottonil_overview.png",
+        "caption": {
+          "en": "Executive Overview Dashboard",
+          "ar": "لوحة القيادة التنفيذية العامة"
+        }
+      },
+      {
+        "url": "assets/images/projects/cottonil_sales.png",
+        "caption": {
+          "en": "Detailed Sales & Revenue Breakdown",
+          "ar": "تفصيل المبيعات والإيرادات حسب القنوات"
+        }
+      },
+      {
+        "url": "assets/images/projects/cottonil_inventory.png",
+        "caption": {
+          "en": "Inventory Health & Stock Turnover Analysis",
+          "ar": "تحليل كفاءة ودوران المخزون"
+        }
+      },
+      {
+        "url": "assets/images/projects/cottonil_basket.png",
+        "caption": {
+          "en": "Market Basket Association Rules (Support, Confidence, Lift)",
+          "ar": "تحليل سلة المشتريات وقواعد الارتباط بين المنتجات"
+        }
+      },
+      {
+        "url": "assets/images/projects/cottonil_whatif.png",
+        "caption": {
+          "en": "Dynamic What-If Pricing & Discount Simulator",
+          "ar": "محاكاة سيناريوهات الأسعار والخصومات الديناميكية"
+        }
+      }
+    ],
+    "overview": {
+      "en": "A comprehensive retail analytics solution built for Cottonil, covering the entire retail value chain: sales trajectories, inventory levels, supplier lead times, discount sensitivity, returns rate, and advanced customer purchasing behaviors.",
+      "ar": "مشروع متكامل لتحليلات قطاع التجزئة تم تطويره لعلامة كوتونيل، يغطي سلسلة القيمة بالكامل: مسارات المبيعات، ومستويات المخزون، وأداء الموردين، وتأثير الخصومات، ومعدلات المرتجعات، وسلوكيات الشراء المتقدمة."
+    },
+    "businessProblem": {
+      "en": "Retail management required actionable visibility to eliminate inventory stockouts, assess the profitability of seasonal promotional campaigns, pinpoint slow-moving SKUs, and identify cross-selling combinations to boost average order value (AOV).",
+      "ar": "احتاجت الإدارة إلى رؤية واضحة للحد من نفاد المخزون، وتقييم الجدوى الربحية لحملات الخصومات، واكتشاف المنتجات الراكدة، ومعرفة المنتجات التي تباع معاً لزيادة متوسط قيمة الطلب."
+    },
+    "implementation": {
+      "en": [
+        "Extracted raw retail dataset from structured HTML using custom Python data ingestion scripts.",
+        "Engineered robust ETL transformations in Power Query, standardizing product categories, dates, and order statuses.",
+        "Built a star-schema analytical data model with optimized relationships between sales facts and dimension tables.",
+        "Authored advanced DAX measures calculating Year-over-Year (YoY) growth, running totals, and moving averages.",
+        "Conducted Market Basket Analysis calculating Item Frequency, Support, Confidence, and Lift.",
+        "Formulated dynamic What-If parameters enabling decision-makers to simulate the net profit impact of varying price and discount levels."
+      ],
+      "ar": [
+        "استخراج البيانات الأولية من صفحات HTML باستخدام سكربتات بايثون مخصصة وحفظها في صيغة مهيأة للتحليل.",
+        "تنفيذ عمليات ETL متقدمة عبر Power Query لتوحيد مسميات المنتجات، وتصحيح التواريخ، وهيكلة حالات الطلبات.",
+        "بناء نموذج بيانات Star Schema محسّن للربط السلس بين جداول الحقائق وجداول الأبعاد.",
+        "كتابة معادلات DAX متقدمة لحساب معدلات النمو السنوي، والمجاميع التراكمية، والمتوسطات المتحركة.",
+        "تنفيذ تحليل سلة المشتريات (Market Basket Analysis) بحساب مؤشرات التكرار والدعم والثقة والرفع.",
+        "تطوير معلمات ماذا-لو (What-If Parameters) التفاعلية لتمكين صناع القرار من محاكاة أثر تعديل الأسعار والخصومات على صافي الأرباح."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Identified core product pairs with strong affinity (Lift > 1.8), enabling high-converting bundle promotions.",
+        "Pinpointed critical inventory imbalances where high-margin SKUs experienced recurring stockouts.",
+        "Determined the optimal discount threshold beyond which promotional volume fails to offset margin degradation."
+      ],
+      "ar": [
+        "تحديد ثنائيات منتجات ذات ارتباط وثيق (Lift > 1.8)، مما ساعد في صياغة حزم عروض ترويجية عالية التحويل.",
+        "كشف اختلالات في المخزون حيث عانت المنتجات ذات هوامش الربح المرتفعة من نفاد متكرر.",
+        "تحديد الحد الأقصى المجدي للخصومات الذي لا ينبغي تجاوزه لتفادي تآكل هامش الربح الصافي."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "Analysis Modules", "ar": "محاور التحليل" }, "value": "10 Modules" },
+      { "label": { "en": "Interactive Dashboards", "ar": "لوحات تفاعلية" }, "value": "5 Dashboards" },
+      { "label": { "en": "Data Sources", "ar": "مصادر البيانات" }, "value": "HTML / Python / Excel" },
+      { "label": { "en": "Advanced Analytics", "ar": "تحليلات متقدمة" }, "value": "Market Basket & What-If" }
+    ]
+  },
+  {
+    "id": "baladna-supply-chain",
+    "title": {
+      "en": "Baladna Supply Chain & Production Analytics",
+      "ar": "تحليلات سلاسل الإمداد والإنتاج لبلدنا"
+    },
+    "subtitle": {
+      "en": "End-to-end supply chain monitoring evaluating factory output, regional distribution, and monthly target attainment.",
+      "ar": "مراقبة متكاملة لسلاسل الإمداد والإنتاج لتقييم مخرجات المصانع والتوزيع الإقليمي ونسب تحقيق المستهدفات."
+    },
+    "category": "bi",
+    "categoryLabel": {
+      "en": "Power BI & BI",
+      "ar": "باور بي آي وذكاء الأعمال"
+    },
+    "featured": true,
+    "tools": ["Power BI", "Power Query", "DAX", "Star Schema", "AI / MCP"],
+    "githubUrl": "https://github.com/KHairy2233/baladna_project",
+    "thumbnail": "assets/images/projects/baladna_home.png",
+    "images": [
+      {
+        "url": "assets/images/projects/baladna_home.png",
+        "caption": {
+          "en": "Executive Hub & Main Navigation",
+          "ar": "الواجهة الرئيسية ومحور الملاحة التنفيذي"
+        }
+      },
+      {
+        "url": "assets/images/projects/baladna_production.png",
+        "caption": {
+          "en": "Factory Production Performance & Bottlenecks",
+          "ar": "مؤشرات الأداء الإنتاجي للمصانع ونقاط الاختناق"
+        }
+      },
+      {
+        "url": "assets/images/projects/baladna_distribution.png",
+        "caption": {
+          "en": "Distribution Logistics vs. Monthly Quotas",
+          "ar": "لوجستيات التوزيع ومقارنة الأداء بالمستهدفات الشهرية"
+        }
+      },
+      {
+        "url": "assets/images/projects/baladna_regional.png",
+        "caption": {
+          "en": "Regional Geographic & Product Insights",
+          "ar": "الرؤى الجغرافية والإقليمية للمنتجات"
+        }
+      }
+    ],
+    "overview": {
+      "en": "A strategic business intelligence solution evaluating production metrics, fleet distribution, regional demand fulfillment, and target adherence for Baladna's food and dairy operations.",
+      "ar": "حل ذكاء أعمال استراتيجي لتقييم مؤشرات الإنتاج، وتوزيع الأسطول، وتلبية الطلب الإقليمي، ومتابعة نسب الالتزام بالمستهدفات المحددة لعمليات شركة بلدنا."
+    },
+    "businessProblem": {
+      "en": "Supply chain leaders faced challenges aligning high-volume factory production output with localized market distribution demands, resulting in regional supply gaps and missed quarterly sales targets.",
+      "ar": "واجه مسؤولو سلاسل الإمداد صعوبة في مواءمة حجم الإنتاج اليومي للمصانع مع متطلبات التوزيع المحلي لكل منطقة، مما أدى إلى حدوث فجوات توريد وتأخر عن تحقيق المستهدفات البيعية."
+    },
+    "implementation": {
+      "en": [
+        "Structured a high-performance Star Schema architecture segregating Production and Distribution facts from shared temporal and geographical dimensions.",
+        "Standardized and cleansed complex supply chain logs using Power Query M transformations.",
+        "Formulated key performance metrics in DAX: Target Achievement %, Production Yield, Defect Rate, and Regional Allocation.",
+        "Integrated AI and predictive visual indicators to highlight supply anomalies and target deviations."
+      ],
+      "ar": [
+        "هيكلة نموذج بيانات Star Schema عالي الأداء يفصل بين وقائع الإنتاج والتوزيع وأبعاد التوقيت والمناطق المشتركة.",
+        "تنظيف وتوحيد سجلات سلاسل الإمداد وسجلات الإنتاج عبر لغة M في Power Query.",
+        "صياغة مؤشرات أداء رئيسية بلغة DAX مثل نسبة تحقيق المستهدف، ومعدل كفاءة خطوط الإنتاج، ونسب الهدر، وتوزيع الحصص الإقليمية.",
+        "دمج تقنيات الذكاء الاصطناعي والمؤشرات التنبؤية لتسليط الضوء الفوري على شذوذ التوريد والانحرافات عن الأهداف."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Highlighted top-performing distribution hubs while isolating under-served distribution corridors.",
+        "Identified key operational bottlenecks causing production downtime during peak demand cycles.",
+        "Improved executive visibility over quota attainment with real-time variance gauges."
+      ],
+      "ar": [
+        "إبراز مراكز التوزيع الأكثر كفاءة وتحديد المسارات اللوجستية التي تعاني من نقص التوريد مقارنة بحجم الطلب.",
+        "اكتشاف نقاط الاختناق التشغيلية التي تسبب فترات توقف لخطوط الإنتاج أثناء فترات ذروة الطلب.",
+        "تمكين الإدارة العليا من مراقبة تحقيق المستهدفات لحظياً عبر مؤشرات انحراف تفاعلية."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "Data Model", "ar": "نموذج البيانات" }, "value": "Star Schema" },
+      { "label": { "en": "KPIs Monitored", "ar": "المؤشرات المتابعة" }, "value": "Yield, Target, SLA" },
+      { "label": { "en": "Coverage", "ar": "نطاق التغطية" }, "value": "Multi-Region / Factory" },
+      { "label": { "en": "Integrations", "ar": "التقنيات المدمجة" }, "value": "Power BI + AI / MCP" }
+    ]
+  },
+  {
+    "id": "sql-dwh-medallion",
+    "title": {
+      "en": "Enterprise SQL Data Warehouse (Medallion Architecture)",
+      "ar": "مستودع بيانات مؤسسي بتصميم الميدالية (Medallion)"
+    },
+    "subtitle": {
+      "en": "Modern layered data warehouse on SQL Server using Bronze, Silver, and Gold tiers with automated ETL stored procedures.",
+      "ar": "مستودع بيانات متطور على SQL Server بطبقات الميدالية (برونزية، فضية، ذهبية) مع إجراءات ETL مخزنة ومؤتمتة."
+    },
+    "category": "sql-dwh",
+    "categoryLabel": {
+      "en": "SQL & Data Engineering",
+      "ar": "قواعد البيانات وهندسة البيانات"
+    },
+    "featured": true,
+    "tools": ["SQL Server", "T-SQL", "Stored Procedures", "DDL/DML", "ETL Architecture"],
+    "githubUrl": "https://github.com/KHairy2233/SQL_DWH_project",
+    "thumbnail": "assets/images/projects/sql_dwh_flow.png",
+    "images": [
+      {
+        "url": "assets/images/projects/sql_dwh_flow.png",
+        "caption": {
+          "en": "End-to-End Data Flow Architecture (Bronze to Gold)",
+          "ar": "معمارية تدفق البيانات المتكاملة (من البرونزية إلى الذهبية)"
+        }
+      },
+      {
+        "url": "assets/images/projects/sql_dwh_integration.png",
+        "caption": {
+          "en": "Data Integration & Stored Procedure Execution Pipeline",
+          "ar": "خط أنابيب تكامل البيانات وتنفيذ الإجراءات المخزنة"
+        }
+      }
+    ],
+    "overview": {
+      "en": "An end-to-end relational data warehousing implementation following industry best practices: staged raw data in Bronze, cleansed and validated relational schemas in Silver, and aggregated analytical business marts in Gold.",
+      "ar": "تطبيق متكامل لمستودع بيانات علائقي وفق أفضل الممارسات المعتمدة: تخزين البيانات الأولية في الطبقة البرونزية، وتنظيفها وهيكلتها في الطبقة الفضية، وتجميعها في مساحات الأعمال التحليلية (Data Marts) في الطبقة الذهبية."
+    },
+    "businessProblem": {
+      "en": "Decentralized transactional databases suffered from redundant records, schema mutations, unvalidated nulls, and severe reporting query latency on active production servers.",
+      "ar": "كانت قواعد البيانات التشغيلية المنفصلة تعاني من تكرار السجلات، وتعارض المسميات، ووجود قيم فارغة غير مفلترة، وبطء استعلامات التقارير على خوادم الإنتاج الفعلية."
+    },
+    "implementation": {
+      "en": [
+        "Architected Bronze layer DDL scripts for high-throughput raw ingestion without early type casting.",
+        "Built modular Silver layer transformation procedures handling deduplication, surrogate keys, null handling, and type enforcement.",
+        "Constructed Gold analytical marts featuring star schemas with facts and conformed dimensions for executive queries.",
+        "Automated the data pipeline via parameterized T-SQL stored procedures with error logging, transactions, and execution audit trails.",
+        "Engineered verification tests to ensure complete data integrity across all layers."
+      ],
+      "ar": [
+        "تصميم سكربتات DDL للطبقة البرونزية للاستيعاب السريع للبيانات الأولية دون فرض تحويلات قسرية مبكرة.",
+        "بناء إجراءات تخزين (Stored Procedures) للطبقة الفضية لمعالجة التكرارات، وتوليد المفاتيح البديلة، وضبط أنواع البيانات.",
+        "تأسيس مساحات الأعمال الذهبية المعتمدة على الـ Star Schema بأبعاد وحقائق مهيأة للاستعلامات الإدارية السريعة.",
+        "أتمتة خط أنابيب البيانات بإجراءات T-SQL وسيطية تدعم تسجيل الأخطاء (Error Logging) وإدارة المعاملات (Transactions).",
+        "كتابة استعلامات فحص جودة البيانات (Data Quality Tests) للتأكد من سلامة السجلات بين الطبقات."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Drastically reduced analytical query latency compared to direct querying against transactional sources.",
+        "Enforced 100% referential integrity and data completeness in the Gold layer.",
+        "Standardized enterprise-wide metrics into consistent, reusable SQL views."
+      ],
+      "ar": [
+        "تقليص زمن استجابة الاستعلامات التحليلية بشكل ملحوظ مقارنة بالاستعلام المباشر من قواعد البيانات التشغيلية.",
+        "تحقيق تكامل علائقي تام واكتمال بنسبة 100% للبيانات في الطبقة الذهبية.",
+        "توحيد مؤشرات المؤسسة وقواعد الاحتساب في عروض (Views) قياسية قابلة لإعادة الاستخدام."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "Architecture", "ar": "المعمارية" }, "value": "Bronze / Silver / Gold" },
+      { "label": { "en": "Engine", "ar": "المحرك" }, "value": "Microsoft SQL Server" },
+      { "label": { "en": "Automation", "ar": "الأتمتة" }, "value": "T-SQL Stored Procedures" },
+      { "label": { "en": "Modeling", "ar": "النمذجة" }, "value": "Star Schema / Data Marts" }
+    ]
+  },
+  {
+    "id": "customer-flight-loyalty",
+    "title": {
+      "en": "Airline Customer Activity & Loyalty Analytics",
+      "ar": "تحليل نشاط وولاء عملاء خطوط الطيران"
+    },
+    "subtitle": {
+      "en": "Comprehensive Python EDA and Power BI dashboards analyzing flight patterns, loyalty tiers, and customer lifetime value.",
+      "ar": "تحليل استكشافي شامل بلغة بايثون ولوحات باور بي آي لدراسة أنماط الرحلات ومستويات الولاء وقيمة العميل."
+    },
+    "category": "python-ml",
+    "categoryLabel": {
+      "en": "Python & Analytics",
+      "ar": "بايثون والتحليلات المتقدمة"
+    },
+    "featured": true,
+    "tools": ["Python", "Pandas", "NumPy", "Microsoft Excel", "Power BI"],
+    "githubUrl": "https://github.com/KHairy2233/customer-flight-analysis",
+    "thumbnail": "assets/images/projects/flight_1.png",
+    "images": [
+      {
+        "url": "assets/images/projects/flight_1.png",
+        "caption": {
+          "en": "Executive Overview of Flight Volume & Loyalty Segments",
+          "ar": "نظرة عامة على أحجام الرحلات وشرائح برنامج الولاء"
+        }
+      },
+      {
+        "url": "assets/images/projects/flight_2.png",
+        "caption": {
+          "en": "Flight Distance & Activity Breakdown",
+          "ar": "تفصيل المسافات المقطوعة وتكرار الرحلات"
+        }
+      },
+      {
+        "url": "assets/images/projects/flight_3.png",
+        "caption": {
+          "en": "Customer Demographics & Geographic Distribution",
+          "ar": "الخصائص الديموغرافية والتوزيع الجغرافي للمسافرين"
+        }
+      }
+    ],
+    "overview": {
+      "en": "An end-to-end analytical project processing customer flight activity, enrollment histories, points accumulation, and travel frequencies to uncover traveler behavior patterns and loyalty retention drivers.",
+      "ar": "مشروع تحليلي شامل يعالج سجلات رحلات الركاب، وتواريخ انضمامهم، ونقاط الولاء المتراكمة، وتكرار السفر لفهم سلوكيات المسافرين ودوافع الاحتفاظ بالعملاء."
+    },
+    "businessProblem": {
+      "en": "Airline marketing teams lacked unified insights into customer progression across loyalty tiers (Aurora, Nova, Star), risking disengagement among mid-tier flyers and suboptimal reward allocations.",
+      "ar": "افتقر فريق التسويق إلى رؤية موحدة حول مسار انتقال المسافرين بين مستويات الولاء، مما عرض فئات المسافرين المتوسطين لخطر الابتعاد وهدر مخصصات المكافآت."
+    },
+    "implementation": {
+      "en": [
+        "Cleaned and merged multiple datasets (Customer Flight Activity and Customer Loyalty History) in Python using Pandas.",
+        "Handled missing values, formatted datetime columns, and engineered flight frequency and points redemption features.",
+        "Conducted Exploratory Data Analysis (EDA) uncovering flight seasonality and salary-tier distributions.",
+        "Built interactive, multi-tab Power BI dashboards with demographic slicers, KPIs, and route engagement maps."
+      ],
+      "ar": [
+        "تنظيف ودمج مجموعات بيانات متعددة (نشاط رحلات العملاء وسجل الولاء) في بايثون عبر Pandas.",
+        "معالجة القيم المفقودة، وهيكلة حقول التواريخ، واستخراج متغيرات جديدة تشمل معدل تكرار الرحلات ونسب استبدال النقاط.",
+        "إجراء تحليل استكشافي للبيانات (EDA) أظهر موسمية السفر وعلاقتها بمستويات الدخل وفئات التذاكر.",
+        "بناء لوحات تفاعلية في Power BI تدعم التصفية حسب الديموغرافيا، ومقاييس الأداء الرئيسية، وخرائط الوجهات."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Discovered that mid-tier loyalty members generate the highest incremental margin when targeted with points-booster offers.",
+        "Identified peak flight seasonality during summer and year-end holidays, enabling proactive capacity planning.",
+        "Demonstrated strong correlation between education level, income bracket, and premium loyalty tier adoption."
+      ],
+      "ar": [
+        "اكتشاف أن أعضاء فئات الولاء المتوسطة يحققون أعلى هامش ربح إضافي عند استهدافهم بعروض مضاعفة النقاط.",
+        "تحديد مواسم ذروة السفر في الصيف ونهاية العام، مما يساعد في التخطيط المسبق للسعة التشغيلية.",
+        "إثبات وجود ارتباط قوي بين المستوى التعليمي وفئات الدخل وبين الانضمام لمستويات الولاء المتميزة."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "Analysis Pipeline", "ar": "مسار التحليل" }, "value": "Python + Power BI" },
+      { "label": { "en": "Key Datasets", "ar": "مجموعات البيانات" }, "value": "Activity & Loyalty Records" },
+      { "label": { "en": "Visual Dashboards", "ar": "شاشات لوحة القيادة" }, "value": "6 Detailed Views" },
+      { "label": { "en": "Focus Areas", "ar": "مجال التركيز" }, "value": "Loyalty Tiers & Churn" }
+    ]
+  },
+  {
+    "id": "sallah-call-center",
+    "title": {
+      "en": "Sallah Call Center Performance Dashboard",
+      "ar": "لوحة قياس أداء مركز اتصالات صلة"
+    },
+    "subtitle": {
+      "en": "Interactive Power BI performance metrics tracking Average Speed of Answer (ASA), call volumes, agent productivity, and SLA compliance.",
+      "ar": "لوحة تفاعلية على باور بي آي لقياس سرعة الرد على المكالمات (ASA) وحجم الاتصالات وإنتاجية الموظفين والالتزام باتفاقيات الخدمة."
+    },
+    "category": "bi",
+    "categoryLabel": {
+      "en": "Power BI & BI",
+      "ar": "باور بي آي وذكاء الأعمال"
+    },
+    "featured": true,
+    "tools": ["Power BI", "DAX", "Power Query", "Customer Service Analytics"],
+    "githubUrl": "https://github.com/KHairy2233/sallah-call-center-project",
+    "thumbnail": "assets/images/projects/sallah_1.png",
+    "images": [
+      {
+        "url": "assets/images/projects/sallah_1.png",
+        "caption": {
+          "en": "Overall Call Center Operational Metrics & Call Volume Trends",
+          "ar": "المؤشرات التشغيلية لمركز الاتصال واتجاهات حجم المكالمات"
+        }
+      },
+      {
+        "url": "assets/images/projects/sallah_2.png",
+        "caption": {
+          "en": "Agent Performance Matrix & SLA Resolution Breakdown",
+          "ar": "مصفوفة أداء الموظفين وتفاصيل سرعة حل المشكلات"
+        }
+      }
+    ],
+    "overview": {
+      "en": "A specialized operational dashboard designed to optimize customer service workflows, assess agent efficiency, reduce customer wait times, and guarantee Service Level Agreement (SLA) adherence.",
+      "ar": "لوحة تشغيلية متخصصة تهدف إلى تحسين كفاءة خدمة العملاء، وتقييم أداء موظفي مركز الاتصال، وتقليل وقت انتظار المتصلين، وضمان الالتزام باتفاقيات مستوى الخدمة (SLA)."
+    },
+    "businessProblem": {
+      "en": "Support leadership required deep granularity into call abandonment spikes, agent workload distribution, and resolution bottlenecks across varying shift intervals.",
+      "ar": "احتاجت إدارة الدعم الفني إلى رؤية مفصلة حول أسباب ارتفاع معدل المكالمات المفقودة (Abandonment Rate)، وتوزيع أعباء العمل بين الموظفين، وأوقات الذروة الحرجة."
+    },
+    "implementation": {
+      "en": [
+        "Extracted and preprocessed call detail records (CDR) including timestamps, wait duration, talk time, and agent IDs.",
+        "Authored custom DAX measures for Average Speed of Answer (ASA), First Contact Resolution (FCR), and Abandonment Rate %.",
+        "Visualized hourly call arrival heatmaps to detect operational peak loads.",
+        "Engineered comparative agent scorecards evaluating handling speed versus customer satisfaction ratings."
+      ],
+      "ar": [
+        "استخراج وتنقية سجلات المكالمات التفصيلية (CDR) بما يشمل التوقيتات، ومدة الانتظار، وزمن التحدث، ومعرفات الموظفين.",
+        "بناء مقاييس DAX لحساب متوسط سرعة الرد (ASA)، ونسبة الحل من أول مكالمة (FCR)، ومعدل المكالمات المتروكة.",
+        "تصميم خرائط حرارية لحجم المكالمات على مدار ساعات اليوم لاكتشاف فترات الضغط التشغيلي بدقة.",
+        "إنشاء بطاقات تقييم أداء مقارنة لموظفي خدمة العملاء لقياس سرعة المعالجة وجودة الخدمة."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Identified persistent call spikes between 12:00 PM and 3:00 PM causing ASA to surge above target thresholds.",
+        "Discovered a 14% improvement in first-call resolution among agents utilizing standardized script flows.",
+        "Provided management with data-backed shift rebalancing recommendations to eliminate peak abandonment."
+      ],
+      "ar": [
+        "اكتشاف فترات ذروة متكررة بين 12 ظهراً و 3 عصراً تتسبب في تجاوز متوسط وقت الرد للحدود المقبولة.",
+        "إثبات تحسن بنسبة 14% في الحل من أول اتصال لدى الموظفين الملتزمين بإجراءات الإجابة القياسية.",
+        "تقديم توصيات مدعومة بالبيانات لإعادة توزيع نوبات العمل بما يقضي على المكالمات الضائعة أثناء الذروة."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "Primary KPI", "ar": "المؤشر الأبرز" }, "value": "ASA & SLA %" },
+      { "label": { "en": "Reporting Scope", "ar": "نطاق التقرير" }, "value": "Agent & Department" },
+      { "label": { "en": "Heatmaps", "ar": "الخرائط الحرارية" }, "value": "Hourly & Day of Week" },
+      { "label": { "en": "Technology", "ar": "التقنية" }, "value": "Power BI & DAX" }
+    ]
+  },
+  {
+    "id": "customer-churn-ml",
+    "title": {
+      "en": "Customer Churn Analysis & Predictive Modeling",
+      "ar": "تحليل وتوقع تسرب العملاء بالتعلم الآلي"
+    },
+    "subtitle": {
+      "en": "Predictive classification and Exploratory Data Analysis (EDA) uncovering key risk factors driving customer churn.",
+      "ar": "نمذجة تصنيفية تنبؤية وتحليل استكشافي متقدم لكشف العوامل والمؤشرات الرئيسية المسببة لتسرب العملاء."
+    },
+    "category": "python-ml",
+    "categoryLabel": {
+      "en": "Python & Machine Learning",
+      "ar": "بايثون وتعلم الآلة"
+    },
+    "featured": true,
+    "tools": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn"],
+    "githubUrl": "https://github.com/KHairy2233/Customer-Churn-Analysis",
+    "thumbnail": "assets/images/projects/churn_1.png",
+    "images": [
+      {
+        "url": "assets/images/projects/churn_1.png",
+        "caption": {
+          "en": "Customer Demographics & Tenure vs Churn Distribution",
+          "ar": "الخصائص الديموغرافية ومدة الاشتراك مقارنة بمعدل التسرب"
+        }
+      },
+      {
+        "url": "assets/images/projects/churn_2.png",
+        "caption": {
+          "en": "Contract Types & Payment Method Churn Correlation",
+          "ar": "علاقة أنواع العقود وطرق الدفع بنسبة تسرب العملاء"
+        }
+      }
+    ],
+    "overview": {
+      "en": "A machine learning and exploratory data project examining customer tenure, contract types, charges, and service subscriptions to accurately predict and prevent customer attrition.",
+      "ar": "مشروع تعلم آلي وتحليل بيانات استكشافي يدرس فترات بقاء العملاء، وأنواع العقود، والرسوم الشهرية، ونوعية الخدمات المشترك بها للتنبؤ المسبق بتسرب العملاء والحد منه."
+    },
+    "businessProblem": {
+      "en": "Subscription-based businesses lose recurring revenue through silent customer departures. Identifying at-risk accounts before cancellation is crucial for executing targeted retention campaigns.",
+      "ar": "تفقد الشركات القائمة على الاشتراكات إيرادات دورية بسبب مغادرة العملاء دون سابق إنذار. يعد الاكتشاف المبكر للحسابات المعرضة للتسرب ركيزة أساسية لتنفيذ حملات الحفاظ على العملاء."
+    },
+    "implementation": {
+      "en": [
+        "Cleaned raw data, handled blank entries in total charges, and encoded categorical features using One-Hot and Label Encoding.",
+        "Conducted extensive visual EDA using Seaborn to map feature correlations and distributions against churn status.",
+        "Trained classification algorithms evaluating feature importance and customer segments most vulnerable to cancellation.",
+        "Synthesized findings into actionable business recommendations for contract restructuring."
+      ],
+      "ar": [
+        "تنظيف البيانات الخام، ومعالجة القيم الفارغة في الرسوم الإجمالية، وترميز المتغيرات الفئوية عبر تقنيات One-Hot Encoding.",
+        "إجراء تحليل استكشافي مرئي واسع النطاق باستخدام Seaborn لدراسة الارتباط بين سمات العميل واحتمالية المغادرة.",
+        "تدريب خوارزميات تصنيف لتقييم أهمية المتغيرات (Feature Importance) وتحديد الفئات الأكثر عرضة لإلغاء الخدمة.",
+        "استخلاص توصيات استراتيجية قابلة للتنفيذ لإعادة هيكلة خطط العقود وتحفيز الالتزام طويل الأجل."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Month-to-month contract holders exhibited drastically higher churn rates compared to one-year and two-year commitments.",
+        "Customers using electronic check payments demonstrated higher churn propensity than automated bank transfers.",
+        "Early-tenure customers (first 6 months) represent the highest risk window, necessitating enhanced onboarding support."
+      ],
+      "ar": [
+        "أظهر المشتركون بعقود شهرية معدل تسرب أعلى بكثير مقارنة بأصحاب العقود السنوية وعقود العامين.",
+        "أظهر العملاء الذين يدفعون عبر الشيكات الإلكترونية قابلية أعلى للمغادرة مقارنة بالدفع البنكي الآلي.",
+        "تمثل الأشهر الستة الأولى من عمر العميل نافذة الخطر الأكبر، مما يتطلب برامج تأهيل ودعم مركزة في البداية."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "Domain", "ar": "المجال" }, "value": "Customer Retention & ML" },
+      { "label": { "en": "Key Library", "ar": "المكتبات الأساسية" }, "value": "Scikit-Learn, Pandas" },
+      { "label": { "en": "Analysis Type", "ar": "نوع التحليل" }, "value": "EDA & Predictive Classification" },
+      { "label": { "en": "Insights Delivered", "ar": "الرؤى المستخرجة" }, "value": "Tenure, Contracts, Payment" }
+    ]
+  },
+  {
+    "id": "techmart-database",
+    "title": {
+      "en": "TechMart Relational Database Architecture",
+      "ar": "تصميم وإدارة قواعد بيانات تك مارت"
+    },
+    "subtitle": {
+      "en": "Enterprise SQL Server relational database featuring normalized schemas, stored procedures, ACID transactions, and RBAC.",
+      "ar": "قاعدة بيانات علائقية متكاملة على SQL Server بنماذج معيارية، وإجراءات مخزنة، ومعاملات ACID، وإدارة صلاحيات المستخدمين."
+    },
+    "category": "sql-dwh",
+    "categoryLabel": {
+      "en": "SQL & Database Design",
+      "ar": "قواعد البيانات وهندسة البيانات"
+    },
+    "featured": false,
+    "tools": ["SQL Server", "T-SQL", "Stored Procedures", "Transactions", "Views", "RBAC"],
+    "githubUrl": "https://github.com/KHairy2233/TechMart-Database-project",
+    "thumbnail": "assets/images/projects/sql_dwh_integration.png",
+    "images": [
+      {
+        "url": "assets/images/projects/sql_dwh_integration.png",
+        "caption": {
+          "en": "Database Schema & Entity Relationship Architecture",
+          "ar": "مخطط قاعدة البيانات ومعمارية العلاقات بين الكيانات"
+        }
+      }
+    ],
+    "overview": {
+      "en": "A robust SQL Server database engineered for an electronics and technology retail business, encompassing normalized entity relationships, secure transactions, automated stored procedures, and role-based permissions.",
+      "ar": "قاعدة بيانات متكاملة على SQL Server تم تصميمها لشركة تجزئة إلكترونيات وتكنولوجيا، تشمل علاقات معيارية بين الكيانات، ومعاملات آمنة، وإجراءات مخزنة مؤتمتة، ونظام إدارة صلاحيات المستخدمين."
+    },
+    "businessProblem": {
+      "en": "A growing retail operation required a centralized, secure relational engine capable of handling concurrent sales transactions, preventing inventory inconsistencies, and restricting sensitive financial data.",
+      "ar": "احتاجت شركة تجارية متنامية إلى محرك بيانات علائقي آمن ومركزي قادر على معالجة معاملات البيع المتزامنة، ومنع تضارب أرصدة المخزون، وحماية البيانات المالية الحساسة."
+    },
+    "implementation": {
+      "en": [
+        "Designed normalized 3NF schemas for customers, products, orders, order details, suppliers, and payments.",
+        "Created production-grade T-SQL stored procedures for order placement, stock decrementing, and status updates.",
+        "Implemented explicit ACID transactions (BEGIN TRAN / COMMIT / ROLLBACK) with TRY...CATCH error handling to safeguard data integrity.",
+        "Constructed analytical views and complex JOIN queries for sales summaries and employee performance.",
+        "Enforced Role-Based Access Control (RBAC) granting least-privilege security roles to staff."
+      ],
+      "ar": [
+        "تصميم جداول معيارية (3NF) للعملاء، والمنتجات، والطلبات، وتفاصيل الطلب، والموردين، والمدفوعات.",
+        "كتابة إجراءات تخزين T-SQL متقدمة لتسجيل الطلبات الجديدة، وخصم المخزون آلياً، وتحديث الحالات.",
+        "تطبيق معاملات ACID الصارمة باستخدام BEGIN TRAN و COMMIT و ROLLBACK مع معالجة الأخطاء عبر TRY...CATCH لضمان سلامة العمليات.",
+        "إنشاء عروض استعلامية (Views) واستعلامات ربط متعددة (JOINs) لحساب إجماليات المبيعات وأداء الموظفين.",
+        "تطبيق نظام إدارة الصلاحيات (RBAC) لتقييد وصول المستخدمين وفق مبدأ الحد الأدنى من الصلاحيات."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Eliminated inventory race conditions during high-concurrency order placement.",
+        "Delivered a fully documented SQL schema accompanied by a step-by-step implementation guide.",
+        "Ensured compliance with strict enterprise transactional integrity standards."
+      ],
+      "ar": [
+        "القضاء على مشاكل تضارب أرقام المخزون الناتجة عن تزامن عمليات الشراء في نفس اللحظة.",
+        "تسليم كود SQL موثق بالكامل مصحوباً بدليل شرح تفصيلي خطوة بخطوة للعمليات البرمجية.",
+        "ضمان التوافق التام مع معايير الأمان وسلامة المعاملات المالية في بيئات الأعمال."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "RDBMS", "ar": "محرك البيانات" }, "value": "Microsoft SQL Server" },
+      { "label": { "en": "Normalization", "ar": "المعيارية" }, "value": "3rd Normal Form (3NF)" },
+      { "label": { "en": "Safety", "ar": "الأمان" }, "value": "ACID Transactions & RBAC" },
+      { "label": { "en": "Documentation", "ar": "التوثيق" }, "value": "Full SQL & PDF Manual" }
+    ]
+  },
+  {
+    "id": "wuzzuf-job-scraper",
+    "title": {
+      "en": "Wuzzuf & HR Job Market Intelligence",
+      "ar": "استخراج وتحليل بيانات سوق التوظيف - وظف"
+    },
+    "subtitle": {
+      "en": "Automated Python web scraper and Power BI dashboard extracting Egyptian job market postings and workplace modalities.",
+      "ar": "منظومة سحب بيانات مؤتمتة ببايثون ولوحة باور بي آي لتحليل إعلانات وظائف السوق المصري وأنماط العمل."
+    },
+    "category": "scraping-automation",
+    "categoryLabel": {
+      "en": "Web Scraping & Automation",
+      "ar": "سحب البيانات والأتمتة"
+    },
+    "featured": false,
+    "tools": ["Python", "Requests", "BeautifulSoup", "Pandas", "Power BI"],
+    "githubUrl": "https://github.com/KHairy2233/wuzzuf-web-scraping",
+    "thumbnail": "assets/images/projects/wuzzuf_dashboard.png",
+    "images": [
+      {
+        "url": "assets/images/projects/wuzzuf_dashboard.png",
+        "caption": {
+          "en": "Power BI Job Market Demand Dashboard",
+          "ar": "لوحة باور بي آي لتحليل حجم الطلب على الوظائف"
+        }
+      },
+      {
+        "url": "assets/images/projects/wuzzuf_scraping.png",
+        "caption": {
+          "en": "Automated Web Scraping Script Execution",
+          "ar": "تنفيذ سكربت سحب البيانات المؤتمت"
+        }
+      }
+    ],
+    "overview": {
+      "en": "An end-to-end data pipeline harvesting live employment postings from Wuzzuf, transforming unformatted HTML into clean analytical data, and visualizing hiring trends across sectors and cities.",
+      "ar": "خط أنابيب بيانات متكامل لسحب إعلانات التوظيف النشطة من موقع وظف، وتحويل نصوص HTML غير المهيكلة إلى بيانات نظيفة، وعرض اتجاهات التوظيف ومناطق التركيز بي بيانياً."
+    },
+    "businessProblem": {
+      "en": "Job seekers and recruitment professionals lack transparent, consolidated benchmarks regarding the distribution of remote vs on-site work and prevailing hiring hubs in Egypt.",
+      "ar": "يفتقر الباحثون عن عمل وأخصائيو التوظيف إلى بيانات مجمعة وشفافة حول مدى انتشار العمل عن بُعد مقارنة بالحضور الفعلي وأبرز المدن والمحافظات الأكثر طلباً للكوادر."
+    },
+    "implementation": {
+      "en": [
+        "Built a modular Python scraping engine using Requests and BeautifulSoup with header rotation and pagination logic.",
+        "Extracted key dimensions: Job Title, Company, Location, Date Posted, Job Type, Workplace Modality (On-site / Hybrid / Remote), and application links.",
+        "Structured and sanitized extracted records into Pandas DataFrames and exported to clean CSV datasets.",
+        "Built a dynamic Power BI report visualizing total active postings, company rankings, and location distributions."
+      ],
+      "ar": [
+        "بناء سكربت بايثون مخصص لسحب البيانات باستخدام مكتبتي Requests و BeautifulSoup مع معالجة التنقل بين الصفحات وتغيير الـ Headers.",
+        "استخراج الحقول الأساسية: المسمى الوظيفي، والشركة، والموقع الجغرافي، وتاريخ النشر، ونوع الدوام، ونمط العمل (حضوري / هجين / عن بعد)، وروابط التقديم.",
+        "تنقية وهيكلة السجلات المستخرجة في جداول Pandas وحفظها في ملفات CSV جاهزة للتحليل.",
+        "تصميم لوحة تفاعلية على Power BI لعرض إجمالي الوظائف، والشركات الأكثر توظيفاً، وتوزيع الوظائف جغرافياً."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Quantified the proportion of Hybrid and Remote opportunities versus On-site positions in the Egyptian tech and HR sectors.",
+        "Mapped the geographic concentration of vacancies within Cairo and Giza compared to regional governorates.",
+        "Established an automated pipeline capable of re-scraping weekly job market updates."
+      ],
+      "ar": [
+        "تحديد النسبة الفعلية لفرص العمل الهجين وعن بُعد مقارنة بالوظائف المكتبية في قطاعات التكنولوجيا والموارد البشرية.",
+        "رسم خريطة التركز الجغرافي للشواغر الوظيفية في محافظتي القاهرة والجيزة مقارنة بباقي المحافظات.",
+        "تأسيس خط أنابيب بيانات مؤتمت يمكن إعادة تشغيله دورياً لمتابعة تحديثات سوق العمل أسبوعياً."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "Target Platform", "ar": "المنصة المستهدفة" }, "value": "Wuzzuf (Egypt)" },
+      { "label": { "en": "Parser", "ar": "أداة الاستخراج" }, "value": "BeautifulSoup & Requests" },
+      { "label": { "en": "Data Store", "ar": "حفظ البيانات" }, "value": "CSV & Pandas" },
+      { "label": { "en": "Visualization", "ar": "العرض المرئي" }, "value": "Power BI Market Hub" }
+    ]
+  },
+  {
+    "id": "tutor-management-system",
+    "title": {
+      "en": "Tutor & Student Academic Management Platform",
+      "ar": "منصة إدارة الطلاب والحصص الدراسية"
+    },
+    "subtitle": {
+      "en": "Custom web application and Google Apps Script system managing student enrollments, exam grades, and 8-session attendance cycles.",
+      "ar": "تطبيق ويب متكامل ونظام Google Apps Script لإدارة تسجيل الطلاب، ودرجات الاختبارات، ودورات الحضور المكونة من 8 حصص."
+    },
+    "category": "scraping-automation",
+    "categoryLabel": {
+      "en": "Software & Automation",
+      "ar": "البرمجيات والأتمتة"
+    },
+    "featured": false,
+    "tools": ["Google Apps Script", "Google Sheets", "HTML5", "CSS3", "JavaScript"],
+    "githubUrl": "https://github.com/KHairy2233/Tutor-Student-Management-System",
+    "thumbnail": "assets/images/projects/tutor_dashboard.png",
+    "images": [
+      {
+        "url": "assets/images/projects/tutor_dashboard.png",
+        "caption": {
+          "en": "Tutor Administrative Dashboard & Group Overview",
+          "ar": "لوحة التحكم الإدارية ونظرة عامة على المجموعات التعليمية"
+        }
+      },
+      {
+        "url": "assets/images/projects/tutor_students.png",
+        "caption": {
+          "en": "Student Directory & Grade Management",
+          "ar": "دليل الطلاب وإدارة الدرجات والتقييمات"
+        }
+      },
+      {
+        "url": "assets/images/projects/tutor_attendance.png",
+        "caption": {
+          "en": "Attendance Tracking & 8-Session Cycle Counter",
+          "ar": "متابعة الحضور وسجل دورات الحصص الثمانية"
+        }
+      }
+    ],
+    "overview": {
+      "en": "A specialized education management solution streamlining private tutoring and group logistics, featuring student self-registration, real-time attendance roll call, dynamic exam tracking, and automated 8-session billing resets.",
+      "ar": "نظام رقمي متخصص لإدارة الحصص التعليمية والمجموعات الدراسية، يتيح التسجيل الذاتي للطلاب، ورصد الحضور والغياب اللحظي، ومتابعة درجات الامتحانات، وحساب دورات السداد المكونة من 8 حصص تلقائياً."
+    },
+    "businessProblem": {
+      "en": "Private instructors and academy centers struggle with disorganized paper attendance sheets, delayed fee collection reminders, and manual grade tallying across dozens of concurrent student cohorts.",
+      "ar": "يعاني المدرسون والمراكز التعليمية من فوضى كشوف الحضور الورقية، وتأخر تتبع مواعيد تحصيل الاشتراكات، ورصد الدرجات يدوياً لعشرات المجموعات في نفس الوقت."
+    },
+    "implementation": {
+      "en": [
+        "Developed Google Apps Script backend endpoints interfacing seamlessly with cloud Google Sheets storage.",
+        "Built a responsive HTML/CSS/JavaScript web interface with modern cards and modals for desktop and mobile use.",
+        "Engineered business logic for student self-registration, group allocation, and automatic verification.",
+        "Implemented an automated 8-session counter that alerts the instructor upon cycle completion."
+      ],
+      "ar": [
+        "تطوير خوادم Google Apps Script الخلفية للربط المتزامن مع جداول بيانات Google Sheets السحابية.",
+        "بناء واجهة مستخدم متجاوبة بتقنيات HTML و CSS و JavaScript مصممة للاستخدام السلس على الموبايل والكمبيوتر.",
+        "برمجة خوارزميات التسجيل الذاتي للطلاب وتوزيعهم التلقائي على المجموعات المناسبة.",
+        "برمجة عداد دورات الحصص (8-Session Tracker) الذي ينبه المعلم فور اكتمال الدورة لتجديد الاشتراك."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Reduced administrative attendance tracking time by over 80% during lecture sessions.",
+        "Completely eliminated session count disputes between students and management through transparent session records.",
+        "Empowered tutors with instant grade averages across exams and groups."
+      ],
+      "ar": [
+        "توفير أكثر من 80% من الوقت المستغرق في تسجيل الحضور والغياب اليدوي داخل القاعات.",
+        "القضاء تماماً على أي التباس أو خلاف بشأن عدد الحصص المحضورة بفضل السجلات الرقمية الشفافة.",
+        "تزويد المعلم بمتوسطات درجات فورية للاختبارات والمجموعات للمتابعة الأكاديمية المستمرة."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "Core Engine", "ar": "المحرك الأساسي" }, "value": "Google Apps Script & Sheets" },
+      { "label": { "en": "Frontend", "ar": "الواجهة" }, "value": "HTML5, CSS3, Vanilla JS" },
+      { "label": { "en": "Key Feature", "ar": "أبرز المزايا" }, "value": "8-Session Cycle Tracking" },
+      { "label": { "en": "Access Type", "ar": "نوع الاستخدام" }, "value": "Self-Registration & Admin" }
+    ]
+  },
+  {
+    "id": "misuo-sales",
+    "title": {
+      "en": "MISUO Commercial Sales Performance Analysis",
+      "ar": "تحليل الأداء التجاري والمبيعات - ميسو"
+    },
+    "subtitle": {
+      "en": "Lightweight, high-impact Microsoft Excel analytical dashboard utilizing Power Query, Pivot Tables, and interactive slicers.",
+      "ar": "لوحة تحليلات تفاعلية عالية الكفاءة على مايكروسوفت إكسيل باستخدام Power Query والجداول المحورية ومقاسم البيانات."
+    },
+    "category": "bi",
+    "categoryLabel": {
+      "en": "Excel & Business Intelligence",
+      "ar": "إكسيل وذكاء الأعمال"
+    },
+    "featured": false,
+    "tools": ["Microsoft Excel", "Power Query", "Pivot Tables", "Pivot Charts", "KPI Modeling"],
+    "githubUrl": "https://github.com/KHairy2233/Misuo",
+    "thumbnail": "assets/images/projects/misuo_dashboard.png",
+    "images": [
+      {
+        "url": "assets/images/projects/misuo_dashboard.png",
+        "caption": {
+          "en": "MISUO Interactive Excel Sales Executive Dashboard",
+          "ar": "لوحة إكسيل التفاعلية لمتابعة المبيعات التنفيذية لميسو"
+        }
+      }
+    ],
+    "overview": {
+      "en": "An agile commercial sales analytics system engineered in Microsoft Excel, providing rapid visibility into regional sales distribution, top-performing product categories, and gross margin trends without requiring cloud infrastructure.",
+      "ar": "نظام تحليلات مبيعات تجاري مرن تم بناؤه في مايكروسوفت إكسيل لتوفير رؤية فورية لتوزيع المبيعات الجغرافي، والفئات الأكثر مبيعاً، ومسار هوامش الربح دون الحاجة لبنية تحتية سحابية معقدة."
+    },
+    "businessProblem": {
+      "en": "Small and medium business stakeholders required an accessible, offline-capable reporting suite to evaluate sales reps, track monthly revenue milestones, and identify seasonal demand fluctuations.",
+      "ar": "احتاجت الإدارة إلى تقرير تحليلي سريع وفعال يمكن تشغيله دون اتصال بالإنترنت لمتابعة أداء مندوبي المبيعات، ومراقبة تحقيق أهداف الإيرادات الشهرية، وتتبع التغيرات الموسمية."
+    },
+    "implementation": {
+      "en": [
+        "Standardized and structured messy transaction rows using Excel Power Query transformations.",
+        "Built linked multi-table Pivot models computing Revenue, Cost of Goods Sold (COGS), and Gross Margin %.",
+        "Crafted a visually cohesive executive dashboard with synchronized slicers for year, quarter, territory, and product.",
+        "Embedded conditional formatting rules and dynamic KPI cards for rapid executive scanning."
+      ],
+      "ar": [
+        "تنظيف وتوحيد سجلات المعاملات الأولية باستخدام تحويلات Power Query داخل إكسيل.",
+        "بناء نماذج جداول محورية (Pivot Tables) مترابطة لحساب الإيرادات، وتكلفة البضاعة المباعة (COGS)، ونسبة هامش الربح الإجمالي.",
+        "تصميم لوحة قيادة احترافية بمقاسم بيانات (Slicers) متزامنة للتصفية حسب السنة، والربع السنوي، والمنطقة، والمنتج.",
+        "تطبيق قواعد التنسيق الشرطي وبطاقات مؤشرات الأداء الديناميكية لتمكين الإدارة من القراءة السريعة للأرقام."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Uncovered significant margin variations between top-selling items and high-volume promotional items.",
+        "Delivered a zero-friction reporting template capable of refreshing in seconds upon appending new monthly data.",
+        "Equipped managers with instant breakdown of revenue contributions by sales region."
+      ],
+      "ar": [
+        "كشف تباينات ملحوظة في هوامش الربح بين المنتجات الأعلى مبيعاً والمنتجات الترويجية كثيفة الحجم.",
+        "تسليم قالب تقرير جاهز وقابل للتحديث الفوري بمجرد إضافة بيانات المبيعات للشهر الجديد.",
+        "تزويد المديرين بتفصيل لحظي لحصص مساهمة المناطق البيعية المختلفة في إجمالي الإيرادات."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "Primary Tool", "ar": "الأداة الأساسية" }, "value": "Microsoft Excel" },
+      { "label": { "en": "Data Engine", "ar": "محرك البيانات" }, "value": "Power Query & Pivot" },
+      { "label": { "en": "Refresh Speed", "ar": "سرعة التحديث" }, "value": "One-Click Data Refresh" },
+      { "label": { "en": "Key Views", "ar": "العروض الرئيسية" }, "value": "Sales, Margin, Territory" }
+    ]
+  },
+  {
+    "id": "house-price-prediction",
+    "title": {
+      "en": "Real Estate Valuation & Regression Modeling",
+      "ar": "توقع أسعار العقارات بالتعلم الآلي"
+    },
+    "subtitle": {
+      "en": "Supervised machine learning project implementing Linear Regression to forecast property market valuations based on architectural features.",
+      "ar": "مشروع تعلم آلي خاضع للإشراف يطبق الانحدار الخطي للتنبؤ بأسعار العقارات السكنية بناءً على مواصفاتها الإنشائية."
+    },
+    "category": "python-ml",
+    "categoryLabel": {
+      "en": "Machine Learning & Python",
+      "ar": "تعلم الآلة وبايثون"
+    },
+    "featured": false,
+    "tools": ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn"],
+    "githubUrl": "https://github.com/KHairy2233/House-prediction-analysis",
+    "thumbnail": "assets/images/projects/cottonil_whatif.png",
+    "images": [
+      {
+        "url": "assets/images/projects/cottonil_whatif.png",
+        "caption": {
+          "en": "Regression Feature Weighting & Price Estimation Curve",
+          "ar": "أوزان المتغيرات في نموذج الانحدار ومنحنى تقدير الأسعار"
+        }
+      }
+    ],
+    "overview": {
+      "en": "A machine learning regression workflow exploring residential housing datasets, engineering numerical and categorical features, and training predictive models to assess property values with statistical evaluation metrics.",
+      "ar": "مسار عمل بالتعلم الآلي يستكشف مجموعات بيانات العقارات السكنية، ويعالج المتغيرات الهندسية والجغرافية، ويدرب نماذج تنبؤية لتقدير القيم السوقية للعقارات بدقة إحصائية."
+    },
+    "businessProblem": {
+      "en": "Property appraisers and real estate buyers face valuation discrepancies caused by subjective pricing methods. Data-driven regression models provide transparent, reproducible baseline prices.",
+      "ar": "يواجه المثمنون العقاريون والمشترون تضارباً في تقدير الأسعار نتيجة للاجتهادات الشخصية. توفر نماذج الانحدار القائمة على البيانات سعراً مرجعياً عادلاً وقابلاً للتكرار."
+    },
+    "implementation": {
+      "en": [
+        "Conducted Exploratory Data Analysis (EDA) examining distributions of lot area, bedrooms, bathrooms, and parking capacity.",
+        "Handled outliers and transformed categorical variables (air conditioning, furnishing status, preferred area) into numerical formats.",
+        "Split data into training and test sets and fitted a multivariate Linear Regression model using Scikit-Learn.",
+        "Evaluated model goodness-of-fit using Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared (R²) coefficients."
+      ],
+      "ar": [
+        "إجراء تحليل استكشافي لدراسة توزيعات مساحات الأراضي، وعدد الغرف، والحمامات، ومواقف السيارات.",
+        "معالجة القيم الشاذة وتحويل المتغيرات الفئوية (مثل التكييف، وحالة الفرش، والمنطقة المفضلة) إلى تمثيلات رقمية.",
+        "تقسيم البيانات إلى مجموعات تدريب واختبار وبناء نموذج انحدار خطي متعدد باستخدام Scikit-Learn.",
+        "تقييم كفاءة النموذج إحصائياً باستخدام مؤشرات Mean Squared Error (MSE) و RMSE ومعامل التحديد R-squared (R²)."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Identified surface area and neighborhood desirability as the two dominant statistical predictors of final sale price.",
+        "Demonstrated solid predictive alignment between modeled valuations and actual historical sale prices on the test partition.",
+        "Documented full Jupyter notebook with residual diagnostics and visualization plots."
+      ],
+      "ar": [
+        "إثبات أن المساحة الصافية وموقع العقار يمثلان العاملين الأكثر تأثيراً إحصائياً في تحديد سعر البيع النهائي.",
+        "تحقيق تطابق ملحوظ بين الأسعار المقدرة بالنموذج والأسعار الفعلية المسجلة في مجموعة بيانات الاختبار.",
+        "توثيق كود بايثون بالكامل في Jupyter Notebook مع رسوم بيانية تفصيلية لتحليل البواقي (Residuals)."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "Algorithm", "ar": "الخوارزمية" }, "value": "Multivariate Linear Regression" },
+      { "label": { "en": "Library", "ar": "المكتبة" }, "value": "Scikit-Learn & Pandas" },
+      { "label": { "en": "Evaluation", "ar": "المقاييس" }, "value": "RMSE, MAE, R² Score" },
+      { "label": { "en": "Notebook", "ar": "دفتر العمل" }, "value": "House_Price_Prediction.ipynb" }
+    ]
+  },
+  {
+    "id": "web-scraping-suite",
+    "title": {
+      "en": "Multi-Source Web Scraping Suite (Tanqeeb & Premier League)",
+      "ar": "منظومة سحب البيانات متعددة المصادر (تنقيب وكووورة)"
+    },
+    "subtitle": {
+      "en": "Python automation suite scraping employment listings from Tanqeeb and Premier League football standings from Kooora into structured CSV pipelines.",
+      "ar": "حزمة أتمتة ببايثون لسحب إعلانات الوظائف من موقع تنقيب وجدول ترتيب الدوري الإنجليزي من موقع كووورة إلى ملفات CSV مهيكلة."
+    },
+    "category": "scraping-automation",
+    "categoryLabel": {
+      "en": "Web Scraping & Automation",
+      "ar": "سحب البيانات والأتمتة"
+    },
+    "featured": false,
+    "tools": ["Python", "Requests", "BeautifulSoup", "Pandas", "CSV Pipelines"],
+    "githubUrl": "https://github.com/KHairy2233/web-scraping-projects",
+    "thumbnail": "assets/images/projects/wuzzuf_scraping.png",
+    "images": [
+      {
+        "url": "assets/images/projects/wuzzuf_scraping.png",
+        "caption": {
+          "en": "Modular Web Scraper Extraction Script",
+          "ar": "سكربت سحب وهيكلة البيانات المعياري"
+        }
+      }
+    ],
+    "overview": {
+      "en": "A modular data extraction suite written in Python designed to scrape, parse, and export tabular data from varied online structures, including multi-page job portals and live sports tournament leaderboards.",
+      "ar": "حزمة أدوات بايثون معيارية مصممة لاستخراج وتحليل وتصدير البيانات من هياكل مواقع مختلفة على الإنترنت، بما في ذلك بوابات التوظيف متعددة الصفحات وجداول البطولات الرياضية الحية."
+    },
+    "businessProblem": {
+      "en": "Analysts often require reliable external datasets that lack public REST APIs. Custom scraping pipelines convert unstructured HTML DOM elements into sanitized, tabular formats for downstream analytics.",
+      "ar": "يحتاج محللو البيانات باستمرار إلى بيانات من مواقع إلكترونية لا توفر واجهات برمجة تطبيقات (APIs). تقوم هذه السكربتات بتحويل عناصر HTML غير المهيكلة إلى جداول نظيفة جاهزة للتحليل."
+    },
+    "implementation": {
+      "en": [
+        "Configured robust HTTP request sessions with customized User-Agents to prevent bot detection.",
+        "Implemented BeautifulSoup HTML DOM traversal navigating complex nested table structures and pagination containers.",
+        "Built specialized parsers for Tanqeeb job posts (roles, companies, locations) and Kooora Premier League tables (points, goal difference, matches played).",
+        "Automated data export directly into clean CSV files with error trapping for broken links."
+      ],
+      "ar": [
+        "تهيئة جلسات طلبات HTTP قوية باستخدام رؤوس طلبات (Headers) مخصصة لتفادي الحظر أثناء السحب.",
+        "استخدام مكتبة BeautifulSoup للتنقل داخل شجرة عناصر HTML والوصول للجداول المعقدة وحاويات الصفحات المتعددة.",
+        "برمجة مستخرجات مخصصة لإعلانات تنقيب (المسمى، الشركة، الموقع) وجدول كووورة للدوري الإنجليزي (النقاط، الأهداف، المباريات).",
+        "أتمتة حفظ البيانات مباشرة في ملفات CSV نظيفة مع معالجة استثناءات الروابط المتعطلة."
+      ]
+    },
+    "findings": {
+      "en": [
+        "Successfully scraped hundreds of active job posts across Egyptian sectors without encountering rate limit bans.",
+        "Created reusable Python scraping templates that can easily be adapted for any table-based or card-based website.",
+        "Normalized scraped outputs for immediate loading into Power BI and pandas analysis notebooks."
+      ],
+      "ar": [
+        "سحب مئات الإعلانات الوظيفية النشطة بنجاح دون مواجهة قيود معدل الطلبات.",
+        "إنشاء قوالب بايثون قياسية قابلة للتكيف السريع مع أي موقع ويب يعتمد على الجداول أو البطاقات.",
+        "تهيئة البيانات المستخرجة لتحميلها المباشر في لوحات Power BI ودفاتر تحليل Pandas."
+      ]
+    },
+    "metrics": [
+      { "label": { "en": "Languages", "ar": "لغة التطوير" }, "value": "Python 3.x" },
+      { "label": { "en": "Libraries", "ar": "المكتبات" }, "value": "Requests, BeautifulSoup, Pandas" },
+      { "label": { "en": "Sources", "ar": "المصادر" }, "value": "Tanqeeb & Kooora" },
+      { "label": { "en": "Output", "ar": "صيغة المخرجات" }, "value": "Structured CSV Datasets" }
+    ]
+  }
+]
